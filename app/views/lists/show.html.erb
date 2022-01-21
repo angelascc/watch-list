@@ -9,7 +9,7 @@
 <div class="cards">
   <% @list.movies.each do |movie| %>
     <div class="card-trip">
-      <img src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
+      <%= image_tag movie.poster_url, alt: movie.title %>
       <div class="card-trip-infos">
         <h2><%= movie.title %></h2>
         <p><%= movie.rating %></p>
